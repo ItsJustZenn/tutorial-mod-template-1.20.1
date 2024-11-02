@@ -6,10 +6,3 @@
 
 # These are Windows script files and should use crlf
 *.bat           text eol=crlf
-echo "# tutorial-mod-template-1.20.1" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/ItsJustZenn/tutorial-mod-template-1.20.1.git
-git push -u origin main
