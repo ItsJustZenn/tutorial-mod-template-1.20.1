@@ -14,9 +14,12 @@ public class ModItems { // This is so the game knows what items I've added
 
     public static final Item SAPPHIRE = registerItem("sapphire", new Item(new FabricItemSettings()));
     // This adds the item.
+    public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
+    // This adds another item
 
     private static void addItemsToCreativeTab(FabricItemGroupEntries entries) {
         entries.add(SAPPHIRE);
+        entries.add(RUBY);
     } // This along with line 25 adds the item to the Ingredients tab of the Creative Menu
 
     private static Item registerItem(String name, Item item) {
