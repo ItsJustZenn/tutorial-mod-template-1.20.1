@@ -1,4 +1,5 @@
 {
   "item.tutorialmod.sapphire": "Sapphire",
-  "item.tutorialmod.ruby": "Ruby"
+  "item.tutorialmod.ruby": "Ruby",
+  "itemgroup.new_ores": "New ores"
 }
