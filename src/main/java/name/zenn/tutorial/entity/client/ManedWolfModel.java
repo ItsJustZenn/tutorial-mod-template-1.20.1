@@ -13,7 +13,7 @@ import software.bernie.geckolib.model.data.EntityModelData;
 public class ManedWolfModel extends GeoModel<ManedWolfEntity> {
     @Override
     public Identifier getModelResource(ManedWolfEntity manedWolfEntity) {
-        return new Identifier(TutorialMod.MOD_ID, "geo/ManedWolf.geo.json");
+        return new Identifier(TutorialMod.MOD_ID, "geo/manedwolf.geo.json");
     }
 
     @Override
@@ -23,7 +23,7 @@ public class ManedWolfModel extends GeoModel<ManedWolfEntity> {
 
     @Override
     public Identifier getAnimationResource(ManedWolfEntity manedWolfEntity) {
-        return new Identifier(TutorialMod.MOD_ID, "animations/ManedWolf.animation.json");
+        return new Identifier(TutorialMod.MOD_ID, "animations/manedwolf.animation.json");
     }
 
     @Override

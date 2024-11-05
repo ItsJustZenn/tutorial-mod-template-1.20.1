@@ -22,10 +22,14 @@ public class ModItems { // This is so the game knows what items I've added
     public static final Item MANED_WOLF_SPAWN_EGG = registerItem("manedwolfspawn_egg",
             new SpawnEggItem(ModEntities.MANEDWOLF, 0xA87D4F, 0xFCFAF9, new FabricItemSettings()));
 
-    private static void addItemsToCreativeTab(FabricItemGroupEntries entries) {
+    private static void addItemsToIngredientsTab(FabricItemGroupEntries entries) {
         entries.add(SAPPHIRE);
         entries.add(RUBY);
-    } // This along with line 32 adds the item to the Ingredients tab of the Creative Menu
+    } // This along with line 38 adds the item to the Ingredients tab of the Creative Menu
+
+    private static void addItemsToSpawnEggsTab(FabricItemGroupEntries entries) {
+        entries.add(MANED_WOLF_SPAWN_EGG);
+    }
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
@@ -34,7 +38,8 @@ public class ModItems { // This is so the game knows what items I've added
     public static void registeredItems() {
         TutorialMod.LOGGER.info("Registering mod items for " + TutorialMod.MOD_ID); // This logs registered items
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToCreativeTab);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientsTab);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.SPAWN_EGGS).register(ModItems::addItemsToSpawnEggsTab);
     } // ModItemGroups class makes registeredItems() and addItemsToCreativeTab kinda useless
 
 }

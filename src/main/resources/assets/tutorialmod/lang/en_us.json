@@ -1,5 +1,7 @@
 {
   "item.tutorialmod.sapphire": "Sapphire",
   "item.tutorialmod.ruby": "Ruby",
-  "itemgroup.new_ores": "New ores"
+  "itemgroup.new_ores": "New ores",
+  "item.tutorialmod.manedwolfspawn_egg": "Maned Wolf Spawn Egg",
+  "entity.tutorialmod.maned_wolf": "Maned Wolf"
 }
